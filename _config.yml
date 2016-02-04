@@ -29,7 +29,7 @@ avatar-hover: "/img/avatar-icon-hover.png"
 # List of links in the navigation bar
 navbar-links:
 #  Home: ""
-  About Me: "aboutme.html"
+  About Me: "aboutme"
 #  Author's home: "http://laurenfromseattle.github.io"
 
 # --- Footer options --- #
