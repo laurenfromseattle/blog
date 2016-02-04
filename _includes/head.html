@@ -6,34 +6,33 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-  
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  <!-- TODO hardcode the required JS because on 2016-02-01 GitHub pages migrated to jekyll 3 and broke this template -->
+  <!-- TODO hardcode the required CSS because on 2016-02-01 GitHub pages migrated to jekyll 3 and broke this template -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-<link rel="stylesheet" href="/css/index.css" />
   <!-- end TODO -->
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
-  
+
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
 	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -44,30 +43,30 @@
     {% for css in layout.ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if layout.css %}
     {% for css in layout.css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
-  
+
   {% if layout.googlefonts %}
     {% for font in layout.googlefonts %}
 	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
     {% endfor %}
   {% endif %}
-  
+
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
-  
+
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
   {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
-  
+
   {% if page.fb-img %}
   <meta property="og:image" content="{{ page.fb-img }}" />
   {% elsif site.avatar %}
@@ -75,5 +74,5 @@
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
-  
+
 </head>

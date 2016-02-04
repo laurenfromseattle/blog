@@ -1,16 +1,23 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+subtitle: Front-end coding. Lifelong learning. Guacamole eating.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+<ul class="skills-list">
+	<li>
+		<img class="svg-skill-icons" src="/blog/img/html-icon.svg" />
+	</li>
+	<li>
+		<img class="svg-skill-icons" src="/blog/img/css-icon.svg" />
+	</li>
+	<li>
+		<img class="svg-skill-icons" src="/blog/img/js-icon.svg" />
+	</li>
+</ul>
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+{:.text-center}
+## Get In Touch
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+{:.text-center .phone-number}
+(512) 905-7370

@@ -4,59 +4,58 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://username.github.io"
-baseurl: ""
+# url: "http://laurenfromseattle.github.io"
+# baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+url: "http://laurenfromseattle.github.io/blog"
+baseurl: "/blog"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Noob Notation
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: A Front-End Web Development Journal
 
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
+avatar-hover: "/img/avatar-icon-hover.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
-  About Me: "aboutme"
-  Author's home: "http://deanattali.com"
-  
+#  Home: ""
+  About Me: "aboutme.html"
+#  Author's home: "http://laurenfromseattle.github.io"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
- 
+  name: Lauren Tucker
+  email: "l.blue.tucker@gmail.com"
+  github: laurenfromseattle    # eg. daattali
+  twitter: emptystrings   # eg. daattali
+  linkedin: in/laurenbluetucker  # eg. "pub/dean-attali/8/946/143"
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
+  facebook: false
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -72,6 +71,9 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
@@ -142,6 +144,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Hitting 60 FPS"
+date:   2016-02-04 22:00:00
+categories: optimization fps jank
+---
